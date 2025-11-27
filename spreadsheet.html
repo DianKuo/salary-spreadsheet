@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動態試算表 - 薪資管理系統</title>
+    <link rel="stylesheet" href="spreadsheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>💼 薪資管理試算表</h1>
+            <div class="header-content">
+                <div class="base-salary-control">
+                    <label for="baseSalaryInput">📊 每月本薪：</label>
+                    <input type="number" id="baseSalaryInput" value="80000" min="0" step="1000">
+                    <span class="currency">元</span>
+                </div>
+                <div class="controls">
+                    <button id="saveBtn" class="btn btn-primary">💾 儲存</button>
+                    <button id="exportBtn" class="btn btn-success">📥 匯出 CSV</button>
+                    <button id="clearBtn" class="btn btn-danger">🗑️ 清除所有</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="spreadsheet-wrapper">
+            <table id="spreadsheet" class="spreadsheet">
+                <thead>
+                    <tr>
+                        <th class="fixed-col">月份</th>
+                        <th>當月領收(稅前)</th>
+                        <th>累計</th>
+                        <th colspan="5">當年度發放</th>
+                        <th colspan="4">預估</th>
+                        <th class="fixed-col-right">總計月份</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th class="fixed-col"></th>
+                        <th></th>
+                        <th></th>
+                        <th>年終</th>
+                        <th>季獎金</th>
+                        <th>經營獎金</th>
+                        <th>三節</th>
+                        <th>交通津貼</th>
+                        <th>年終</th>
+                        <th>季獎金</th>
+                        <th>經營獎金</th>
+                        <th>三節</th>
+                        <th class="fixed-col-right"></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data rows will be inserted here -->
+                </tbody>
+                <tfoot>
+                    <tr class="summary-row">
+                        <td class="fixed-col label-cell">調整影響幅度</td>
+                        <td colspan="12" class="summary-value" id="adjustmentImpact">1</td>
+                    </tr>
+                    <tr class="summary-row">
+                        <td class="fixed-col label-cell">推估年收</td>
+                        <td colspan="12" class="summary-value" id="estimatedAnnual">1,740,000</td>
+                    </tr>
+                    <tr class="summary-row">
+                        <td class="fixed-col label-cell">平均月薪</td>
+                        <td colspan="12" class="summary-value" id="averageMonthly">145,000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="info-panel">
+            <h3>📊 使用說明</h3>
+            <ul>
+                <li>📊 在上方設定每月本薪,套用到所有月份</li>
+                <li>✏️ 編輯預估月份數,獎金發放自動計算</li>
+                <li>🔄 當月領收和累計欄位會自動計算</li>
+                <li>💾 資料會自動儲存至瀏覽器</li>
+                <li>📥 可匯出為 CSV 檔案</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="spreadsheet.js"></script>
+</body>
+
+</html>
