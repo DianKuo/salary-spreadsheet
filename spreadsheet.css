@@ -321,44 +321,6 @@ tbody .fixed-col {
     }
 }
 
-.spreadsheet tbody tr {
-    animation: fadeIn 0.3s ease;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    body {
-        padding: 1rem;
-    }
-
-    header {
-        padding: 1.5rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .spreadsheet-wrapper {
-        padding: 1rem;
-    }
-
-    .spreadsheet td,
-    .spreadsheet th {
-        padding: 0.5rem;
-        font-size: 0.875rem;
-    }
-
-    .btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.875rem;
-    }
-}
-
-/* Scrollbar styling */
-.spreadsheet-wrapper::-webkit-scrollbar {
-    height: 12px;
-}
 
 .spreadsheet-wrapper::-webkit-scrollbar-track {
     background: var(--surface);

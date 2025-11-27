@@ -1,17 +1,18 @@
 // Initial data from the uploaded image
+// Initial data from the uploaded image
 const initialData = [
-    { month: 'Jan-24', yearEndPaid: 280000, quarterlyPaid: 20000, managementPaid: 200000, festivalPaid: 80000, yearEndEst: 3.50, quarterlyEst: 0.25, managementEst: 2.50, festivalEst: 1.00, totalMonths: 7.25, transportAllowance: 5000 },
-    { month: 'Feb-24', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 },
-    { month: 'Mar-24', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 },
-    { month: 'Apr-24', yearEndPaid: null, quarterlyPaid: 20000, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: 0.25, managementEst: null, festivalEst: null, totalMonths: 0.25, transportAllowance: 5000 },
-    { month: 'May-24', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: 40000, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: 0.50, totalMonths: 0.50, transportAllowance: 5000 },
-    { month: 'Jun-24', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 },
-    { month: 'Jul-24', yearEndPaid: null, quarterlyPaid: 20000, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: 0.25, managementEst: null, festivalEst: null, totalMonths: 0.25, transportAllowance: 5000 },
-    { month: 'Aug-24', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 },
-    { month: 'Sep-24', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: 40000, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: 0.50, totalMonths: 0.50, transportAllowance: 5000 },
-    { month: 'Oct-24', yearEndPaid: null, quarterlyPaid: 20000, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: 0.25, managementEst: null, festivalEst: null, totalMonths: 0.25, transportAllowance: 5000 },
-    { month: 'Nov-24', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 },
-    { month: 'Dec-24', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 }
+    { month: '1月', yearEndPaid: 280000, quarterlyPaid: 20000, managementPaid: 200000, festivalPaid: 80000, yearEndEst: 3.50, quarterlyEst: 0.25, managementEst: 2.50, festivalEst: 1.00, totalMonths: 7.25, transportAllowance: 5000 },
+    { month: '2月', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 },
+    { month: '3月', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 },
+    { month: '4月', yearEndPaid: null, quarterlyPaid: 20000, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: 0.25, managementEst: null, festivalEst: null, totalMonths: 0.25, transportAllowance: 5000 },
+    { month: '5月', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: 40000, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: 0.50, totalMonths: 0.50, transportAllowance: 5000 },
+    { month: '6月', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 },
+    { month: '7月', yearEndPaid: null, quarterlyPaid: 20000, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: 0.25, managementEst: null, festivalEst: null, totalMonths: 0.25, transportAllowance: 5000 },
+    { month: '8月', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 },
+    { month: '9月', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: 40000, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: 0.50, totalMonths: 0.50, transportAllowance: 5000 },
+    { month: '10月', yearEndPaid: null, quarterlyPaid: 20000, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: 0.25, managementEst: null, festivalEst: null, totalMonths: 0.25, transportAllowance: 5000 },
+    { month: '11月', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 },
+    { month: '12月', yearEndPaid: null, quarterlyPaid: null, managementPaid: null, festivalPaid: null, yearEndEst: null, quarterlyEst: null, managementEst: null, festivalEst: null, totalMonths: 0.00, transportAllowance: 5000 }
 ];
 
 let spreadsheetData = [];
@@ -100,8 +101,21 @@ function loadData() {
 
     if (savedData) {
         spreadsheetData = JSON.parse(savedData);
-        // Migration: Ensure transportAllowance exists
+
+        // Migration: Update month format and ensure transportAllowance exists
+        const monthMap = {
+            'Jan-24': '1月', 'Feb-24': '2月', 'Mar-24': '3月', 'Apr-24': '4月',
+            'May-24': '5月', 'Jun-24': '6月', 'Jul-24': '7月', 'Aug-24': '8月',
+            'Sep-24': '9月', 'Oct-24': '10月', 'Nov-24': '11月', 'Dec-24': '12月'
+        };
+
         spreadsheetData.forEach(row => {
+            // Update month format if it matches old format
+            if (monthMap[row.month]) {
+                row.month = monthMap[row.month];
+            }
+
+            // Ensure transportAllowance exists
             if (row.transportAllowance === undefined) {
                 row.transportAllowance = 5000;
             }
@@ -267,7 +281,7 @@ function exportToCSV() {
 
     // Add summary rows
     csv += '\n';
-    csv += '調整影響幅度,1\n';
+
     csv += '推估年收,' + (spreadsheetData[spreadsheetData.length - 1]?.accumulated || 0) + '\n';
     csv += '平均月薪,' + Math.round((spreadsheetData[spreadsheetData.length - 1]?.accumulated || 0) / 12) + '\n';
 
